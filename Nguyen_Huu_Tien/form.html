@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Form Bootstrap</title>
+</head>
 
 <h2>HTML Forms</h2>
 
@@ -13,6 +18,21 @@
 </form>
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
+<div class="container mt-5">
+    <h2>Đăng ký thông tin</h2>
+    <form action="/action_page.php">
+        <div class="mb-3">
+            <label for="fname" class="form-label">First name:</label>
+            <input type="text" class="form-control" id="fname" name="fname" value="John">
+        </div>
+        
+        <div class="mb-3">
+            <label for="lname" class="form-label">Last name:</label>
+            <input type="text" class="form-control" id="lname" name="lname" value="Doe">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Gửi dữ liệu</button>
+    </form>
+</div>
 </body>
 </html>
