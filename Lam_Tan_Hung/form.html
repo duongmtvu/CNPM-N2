@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms with Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
 <body>
 
-<h2>HTML Forms</h2>
+<div class="container mt-5">
+    <h2 class="mb-4">HTML Forms</h2>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
+    <form action="/action_page.php" class="border p-4 rounded shadow-sm">
+        <div class="mb-3">
+            <label for="fname" class="form-label">First name:</label>
+            <input type="text" id="fname" name="fname" value="John" class="form-control">
+        </div>
+        
+        <div class="mb-3">
+            <label for="lname" class="form-label">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Doe" class="form-control">
+        </div>
+        
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+
+    <p class="mt-3 text-muted">If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</div>
 
 </body>
 </html>
